@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+    user-select: none;
+  }
+
+                  
+  :root {
+   
+      
+    --Roboto: 'Roboto';
+    --Lato : 'lato';
+    
+    font-family: 'Century Gothic', sans-serif;                                            
+   
+   
+  } 
+  
+  .TodoItem-p--complete-active
+  {
+      text-decoration: line-through;
+      color: #d9d9d9;
+      
+  }
