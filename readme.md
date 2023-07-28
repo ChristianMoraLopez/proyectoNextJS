@@ -1,120 +1,38 @@
-<p align="center">
-  <a href="https://platzi.com/cursos/next-2020/" target="_blank">
-    <img alt="Curso de Next.js" src="https://static.platzi.com/media/achievements/badge-nextjs-2259fc68-f86b-486e-bc09-95311a887985.png" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Proyecto del Curso: Next.js
-</h1>
-<p align="center">
-  <a href="https://platzi-avo.vercel.app/" target="_blank">
-    https://platzi-avo.vercel.app/
-  </a>
-</p>
+# Proyecto NextArt - Readme
 
-[Curso de Next.js](https://platzi.com/cursos/next-2020/) dictado por [@jonalvarezz](https://twitter.com/jonalvarezz) para [Platzi](https://platzi.com)
-
-* [Cómo trabajar en este proyecto?](#-cómo-trabajar-en-este-proyecto)
-* [Guía rápida](#-gu%C3%ADa-rápida)
-* [Logros](#-logros)
-* [Encontraste un error o mejora?](#-encontraste-un-error-o-mejora)
-
-### 🔎 Cómo trabajar en este proyecto?
-El curso es totalmente práctico y progresivo. Este repositorio solo existe como una guía para cuando lo necesites. Puedes realizar todo el curso en tu propio proyecto y tu propio repositorio.
-
-Avanzamos en el curso a un nuevo tema y no puedes o no quieres completar los cambios anteriores para continuar? 
-Empieza desde la etiqueta git correspondiente al módulo del curso.
+[![Art](https://media.discordapp.net/attachments/995431151084773486/1133690703487184956/Thomas_B_black_white_red_and_beige_Flat_2D_vector_art_white_bac_29105a65-2101-45ad-9cc1-68d9cec32139.png?width=897&height=676 "Art")](https://media.discordapp.net/attachments/995431151084773486/1133690703487184956/Thomas_B_black_white_red_and_beige_Flat_2D_vector_art_white_bac_29105a65-2101-45ad-9cc1-68d9cec32139.png?width=897&height=676 "Art")
 
 
-1.  Actualiza la información de las etiquetas:
-    
-    > Anteriormente debiste clonar este repositorio tal como lo hicimos en clase.
+## Descripción
+¡Bienvenido a Proyecto NextArt! Esta es una página web creada como parte de un proyecto personal con el objetivo de demostrar habilidades en el desarrollo web utilizando Next.js. La página tiene como temática el arte y está diseñada para mostrar una colección de productos artísticos.
 
-    ```sh
-    git fetch --tags
-    ```
-    
+## Características
+- Listado de productos: En la página principal, encontrarás una lista de productos artísticos disponibles para explorar. Cada producto muestra su nombre y una imagen representativa.
 
-1.  Lista las etiquetas disponibles:
+- Detalles del producto: Al hacer clic en un producto, serás redirigido a su página de detalles, donde encontrarás información más detallada sobre el producto, como su descripción, precio y otras características relevantes.
 
-    ```sh
-    git tag
-    ```
-    
-    Deberías ver algo como:
+- Navegación fluida: La aplicación utiliza el enrutamiento de Next.js para proporcionar una navegación suave y sin interrupciones. Los cambios de página son rápidos y se cargan de forma dinámica.
 
-    ```sh
-    1-lo-basico
-    2-inicio-api
-    3-api
-    ...
-    ```
+## Habilidades necesarias
+Para construir esta página, se requieren las siguientes habilidades:
 
-1.  Inicia un nuevo branch desde el punto que desees:
+Conocimientos básicos de HTML, CSS y JavaScript.
+Familiaridad con el framework de React.js y componentes funcionales.
+Experiencia con Next.js y su sistema de enrutamiento.
+Manejo de estados y props en React.
+Conocimientos sobre la creación de componentes reutilizables.
+Uso de Vercel para el despliegue de aplicaciones web.
+Enlaces
+Puedes acceder a la página de Proyecto NextArt a través de los siguientes enlaces:
 
-    ```sh
-    git checkout -b el-nombre-de-mi-branch etiqueta-elegida
+1. proyectonextart.vercel.app
+2. proyectonextart-git-main-christianmoralopez.vercel.app
+3. proyectonextart-opv62c519-christianmoralopez.vercel.app
 
-    # Por ejemplo, para iniciar desde el módulo 4-javascript
-    git checkout -b jonalvarezz-javascript 4-javascript
-    ```
+Contribuciones
+¡Gracias por visitar Proyecto NextArt! Siéntete libre de explorar la página, realizar pruebas y brindar comentarios constructivos. Si deseas contribuir al proyecto, no dudes en enviar pull requests o abrir issues en el repositorio del proyecto en GitHub.
 
-    Eso es todo, ya puedes iniciar con todos los cambios incluidos hasta ese módulo. En la [sección Tags de GitHub](https://github.com/jonalvarezz/platzi-optimizacion-web/tags), encuentras más información de cada etiqueta.
-    
+Autor
+Christian Mora.
 
-#### Bonus: Cómo subo mis cambios a otro repositorio?
-Git permite manejar varios repositorios remotos en una misma copia local. [Aquí encuentras más información](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) y te dejaré el cheatsheet a continuación:
-```sh
-# Crea tu nuevo repositorio en GitHub/GitLab/otro. 
-# Asumamos la URL es git@github.com:jonalvarezz/mi-repo-mas-bello.git
-# Agrega el nuevo remote
-
-git remote add mi-repo git@github.com:jonalvarezz/mi-repo-mas-bello.git
-
-# Para push
-git push mi-repo branch-a-hacer-push
-
-
-# Para pull
-git pull mi-repo branch-a-hacer-push
-```
-
-### 🤖 Guía Rápida
-
-1.  **Empieza a desarrollar.**
-
-    Instala dependencias
-
-    ```sh
-    yarn
-    ```
-
-    Inicia el proyecto
-
-    ```sh
-    yarn dev
-    ```
-
-    El sitio estará disponible en http://localhost:3000.
-
-
-### 🚀 Logros
-
-1. Creación del proyecto
-1. Agrego una ruta básica
-1. Agrego una ruta dinámica
-1. Enlazo páginas y creo una SPA
-1. Agrega nuestra propia API
-1. Páginas usando nuestra propia API
-1. Crea components App and Document personalizados
-1. Configura path aliases
-1. Crea páginas y componentes UI para el sitio
-1. Crea Store simple usando Context
-
-
-### 🐞 Encontraste un error o mejora?
-Ayuda a otros estudiantes con eso que acabas de descubrir que haría este curso y repositorio mucho mejor.
-* En [Issues](https://github.com/jonalvarezz/platzi-optimizacion-web/issues/new) puedes reportar errores, agregar sugerencias y comentarios.
-* Por su parte, los [Pull Request](https://github.com/jonalvarezz/platzi-optimizacion-web/pulls) siempre estarán abiertos para recibir mejoras puntuales.
-
-Happy hacking!
+¡Espero que disfrutes explorando Proyecto NextArt! 😊
