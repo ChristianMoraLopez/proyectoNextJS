@@ -7,35 +7,27 @@ type ProductListProps = {
   products: TProduct[]
 }
 
+
 const mapProductsToCards = (products: TProduct[]) =>
   products.map(({ name, id, price, image }) => (
-    <Link key={id} href={`/product/${id}`} passHref>
+    <Link key={id} href="/product/[id]" 
+    className='m-2'
+    as={`/product/${id}`} passHref>
       <Card
         as="a"
         header={name}
-        image={{
-          children: (
-            <div style={{ width: '333px', height: '333px' }}>
-              <Image
-                src={image}
-                layout="fill"
-                objectFit="cover"
-                alt={name}
-              />
-            </div>
-          ),
-        }}
-        meta={{
-          children: <Card.Meta style={{ color: 'dimgray' }}>{price}</Card.Meta>,
-        }}
+        image={image
+          ? <Image src={image} alt={name} width={300} height={300} />
+        : undefined}
+        meta={<Card.Meta style={{ color: 'dimgray' }}>{price}</Card.Meta>}
       />
     </Link>
   ));
 
 const ProductList = ({ products }: ProductListProps) => (
-  <Card.Group itemsPerRow={2} stackable>
+  <Card.Group itemsPerRow={2} stackable style={{ margin: '10px' }}>
     {mapProductsToCards(products)}
   </Card.Group>
-)
+);
 
-export default ProductList
+export default ProductList;

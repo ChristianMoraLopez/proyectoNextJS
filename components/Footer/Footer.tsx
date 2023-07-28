@@ -20,7 +20,7 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/about">
-                  <a>Conoce más</a>
+                Contact
                 </Link>
               </List.Item>
             </List>
@@ -30,7 +30,7 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/">
-                  <a>Todos los productos</a>
+                  Todos los productos
                 </Link>
               </List.Item>
             </List>
