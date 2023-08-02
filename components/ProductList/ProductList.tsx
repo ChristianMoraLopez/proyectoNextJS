@@ -27,7 +27,7 @@ const mapProductsToCards = (products: TProduct[]) =>
 
 const ProductList = ({ products }: ProductListProps) => (
 
-<div >
+<div id='Content'>
   <div className=' h-0 invisible  md:visible md:h-fit '>
   <CarouselImages />
   </div>

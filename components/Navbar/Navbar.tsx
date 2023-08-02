@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <Menu size="huge" borderless pointing as="header">
-      <Container text>
+      <Container text className='min-w-fit'>
         <Link href="/" passHref>
           <Menu.Item
             active={pathname === '/'}
