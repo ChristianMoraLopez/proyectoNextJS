@@ -11,7 +11,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => (
   <>
     <Navbar />
-    <Container as="main" text>
+    <Container as="main" text className='min-w-fit'>
       {children}
     </Container>
     <Footer />
