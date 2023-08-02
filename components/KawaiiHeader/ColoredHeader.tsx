@@ -17,6 +17,7 @@ const ColoredHeader = ({ onClick , }: ColoredHeaderProps) =>
   };
 
   return (
+    <div className='collapse h-0 sm:visible sm:h-fit'>
     <Header size="huge" as="h1" onClick={handleHeaderClick} className="flex flex-col">
       <div className="upper-text">Art by Christian Mora</div>
       <div className="csymbol-container">
@@ -30,6 +31,8 @@ const ColoredHeader = ({ onClick , }: ColoredHeaderProps) =>
       </div>
       <div className="lower-text">Art</div>
     </Header>
+
+      </div>
   );
 };
 

@@ -20,7 +20,7 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/about">
-                Contact
+                Conoce más del arte
                 </Link>
               </List.Item>
             </List>

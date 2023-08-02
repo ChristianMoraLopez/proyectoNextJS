@@ -5,14 +5,17 @@ import { PosMeColoreo } from '@components/SVGIcons'
 
 const ModalHeaderContent = () => {
   return (
-    <div className="container">
+    <div className="container  md:container md:mx-auto ">
       <Grid columns={2}>
         <Grid.Row verticalAlign={'middle'}>
-          <Grid.Column width="5">
-            <PosMeColoreo size="154px" />
+          <Grid.Column width="5" >
+          <div className="container  min-h-full">
+            <PosMeColoreo  className='w-32 h-32  sm:w-36 md:h-36 md:w-48 md:h-48 object-contain' />
+
+          </div>
           </Grid.Column>
           <Grid.Column width="11">
-            <Header as="h2">Coloreaste la C</Header>
+            <Header as="h2">Coloreaste la C</Header> 
             <p>La tocaste tanto que se coloreo</p>
             <p>
               ¡Eres una persona curiosa, te gusta explorar!
@@ -20,12 +23,6 @@ const ModalHeaderContent = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-
-      <style jsx>{`
-        .container {
-          padding: 2rem;
-        }
-      `}</style>
     </div>
   )
 }

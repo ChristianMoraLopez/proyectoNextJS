@@ -2,6 +2,8 @@ import React from 'react'
 import { Card } from 'semantic-ui-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import CarouselImages from './CarouselInnApp'
+
 
 type ProductListProps = {
   products: TProduct[]
@@ -16,18 +18,26 @@ const mapProductsToCards = (products: TProduct[]) =>
       <Card
         as="a"
         header={name}
-        image={image
-          ? <Image src={image} alt={name} width={300} height={300} />
-        : undefined}
+        image={<Image src={image} alt={name} width={300} height={300} />
+       }
         meta={<Card.Meta style={{ color: 'dimgray' }}>{price}</Card.Meta>}
       />
     </Link>
   ));
 
 const ProductList = ({ products }: ProductListProps) => (
-  <Card.Group itemsPerRow={2} stackable style={{ margin: '10px' }}>
-    {mapProductsToCards(products)}
-  </Card.Group>
+
+<div >
+  <div className=' h-0 invisible  md:visible md:h-fit '>
+  <CarouselImages />
+  </div>
+
+<Card.Group className="justify-evenly m-3">
+  {mapProductsToCards(products)}
+</Card.Group>
+
+</div>
+
 );
 
 export default ProductList;

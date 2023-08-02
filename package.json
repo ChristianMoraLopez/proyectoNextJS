@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
-  "name": "platzi-next",
-  "author": "@jonalvarezz",
+  "name": "art-next",
+  "author": "Christian Mora",
   "private": true,
   "description": "",
   "main": "index.js",
@@ -17,11 +17,16 @@
     "pre-push": "yarn type-check"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "@types/cors": "2.x",
-    "bootstrap": "^5.3.1",
     "cors": "2.x",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.5.0",
+    "framer-motion": "^10.15.0",
     "isomorphic-unfetch": "4.0.2",
     "next": "^13.4.12",
     "react": "^18.2.0",

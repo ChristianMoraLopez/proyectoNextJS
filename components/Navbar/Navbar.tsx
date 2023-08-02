@@ -18,9 +18,13 @@ const Navbar = () => {
           <Menu.Item
             active={pathname === '/'}
             title="Inicio | Todos los productos"
+            className='flex flex-col md:flex-row'
           >
-            <CSymbol />
+            <CSymbol className='container mx-auto w-16 h-16  md:h-12 md:w-12 '/>
+            <div className='invisible md:visible'>
             Art Store
+            </div>
+            
           </Menu.Item>
         </Link>
         <Menu.Menu position="right">

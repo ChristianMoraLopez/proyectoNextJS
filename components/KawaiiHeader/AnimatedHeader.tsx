@@ -24,6 +24,7 @@ const AnimatedHeader = ({ onClick, onComplete }: AnimatedHeaderProps) => {
   return (
 
 
+<div className='collapse h-0 sm:visible sm:h-fit'>
 
     <Header size="huge" as="h1" onClick={handleHeaderClick} className="header-container flex flex-col ">
     <div className="upper-text">
@@ -45,6 +46,8 @@ const AnimatedHeader = ({ onClick, onComplete }: AnimatedHeaderProps) => {
 
 
   </Header>
+  
+</div>
   );
 };
 
